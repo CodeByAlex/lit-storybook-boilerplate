@@ -1,0 +1,122 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import { html } from 'lit';
+import './button.ts';
+
+<Meta
+  title="Components / Button"
+  component="cba-button"
+  argTypes={{
+    buttonText: 'Button',
+    variant: {
+      options: ['default', 'primary', 'success', 'info', 'warning', 'danger'],
+      control: { type: 'select' }
+    },
+  }}
+/>
+
+# Beacon Button
+
+Stories that show the different variations of a button.
+
+<Canvas withSource="open">
+  <Story
+    name="Button - default"
+    component="cba-button"
+    args={{
+      buttonText: 'Default Button',
+      variant: 'default',
+    }}
+  >
+    {(args) => html`
+        <cba-button variant="${args.variant}">${args.buttonText}</cba-button>
+    `}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Button - default" />
+
+<Canvas withSource="open">
+  <Story
+    name="Button - primary"
+    component="cba-button"
+    args={{
+      buttonText: 'Primary Button',
+      variant: 'primary',
+    }}
+  >
+    {(args) => html`
+        <cba-button variant="${args.variant}">${args.buttonText}</cba-button>
+    `}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Button - primary" />
+
+<Canvas withSource="open">
+  <Story
+    name="Button - success"
+    component="cba-button"
+    args={{
+      buttonText: 'Success Button',
+      variant: 'success',
+    }}
+  >
+    {(args) => html`
+        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+    `}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Button - sucsess" />
+
+<Canvas withSource="open">
+  <Story
+    name="Button - info"
+    component="cba-button"
+    args={{
+      buttonText: 'Info Button',
+      variant: 'info',
+    }}
+  >
+    {(args) => html`
+        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+    `}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Button - info" />
+
+<Canvas withSource="open">
+  <Story
+    name="Button - warning"
+    component="cba-button"
+    args={{
+      buttonText: 'Warning Button',
+      variant: 'warning',
+    }}
+  >
+    {(args) => html`
+        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+    `}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Button - warning" />
+
+<Canvas withSource="open">
+  <Story
+    name="Button - danger"
+    component="cba-button"
+    args={{
+      buttonText: 'Danger Button',
+      variant: 'danger',
+    }}
+  >
+    {(args) => html`
+        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+    `}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Button - danger" />
+
