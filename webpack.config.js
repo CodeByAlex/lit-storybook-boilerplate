@@ -4,7 +4,7 @@ module.exports = {
     mode: 'production',
     entry: `${path.join(__dirname, 'src/index')}`,
     output: {
-        filename: 'code-by-alex-ds.js',
+        filename: 'example-ds.js',
         path: path.resolve(__dirname, 'dist'),
     },
     optimization: {

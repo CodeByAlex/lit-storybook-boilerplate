@@ -6,7 +6,7 @@ export type ButtonVariant =  'primary' | 'success' | 'info' | 'warning' | 'dange
  * The Outline Button component
  * @slot - The default, and only slot for this element.
  */
-@customElement('cba-button')
+@customElement('example-button')
 export class Button extends LitElement {
 
   static get styles() {

@@ -4,7 +4,7 @@ import './button.ts';
 
 <Meta
   title="Components / Button"
-  component="cba-button"
+  component="example-button"
   argTypes={{
     buttonText: 'Button',
     variant: {
@@ -21,14 +21,14 @@ Stories that show the different variations of a button.
 <Canvas withSource="open">
   <Story
     name="Button - default"
-    component="cba-button"
+    component="example-button"
     args={{
       buttonText: 'Default Button',
       variant: 'default',
     }}
   >
     {(args) => html`
-        <cba-button variant="${args.variant}">${args.buttonText}</cba-button>
+        <example-button variant="${args.variant}">${args.buttonText}</example-button>
     `}
   </Story>
 </Canvas>
@@ -38,14 +38,14 @@ Stories that show the different variations of a button.
 <Canvas withSource="open">
   <Story
     name="Button - primary"
-    component="cba-button"
+    component="example-button"
     args={{
       buttonText: 'Primary Button',
       variant: 'primary',
     }}
   >
     {(args) => html`
-        <cba-button variant="${args.variant}">${args.buttonText}</cba-button>
+        <example-button variant="${args.variant}">${args.buttonText}</example-button>
     `}
   </Story>
 </Canvas>
@@ -55,14 +55,14 @@ Stories that show the different variations of a button.
 <Canvas withSource="open">
   <Story
     name="Button - success"
-    component="cba-button"
+    component="example-button"
     args={{
       buttonText: 'Success Button',
       variant: 'success',
     }}
   >
     {(args) => html`
-        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+        <example-button variant="${args.variant}" >${args.buttonText}</example-button>
     `}
   </Story>
 </Canvas>
@@ -72,14 +72,14 @@ Stories that show the different variations of a button.
 <Canvas withSource="open">
   <Story
     name="Button - info"
-    component="cba-button"
+    component="example-button"
     args={{
       buttonText: 'Info Button',
       variant: 'info',
     }}
   >
     {(args) => html`
-        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+        <example-button variant="${args.variant}" >${args.buttonText}</example-button>
     `}
   </Story>
 </Canvas>
@@ -89,14 +89,14 @@ Stories that show the different variations of a button.
 <Canvas withSource="open">
   <Story
     name="Button - warning"
-    component="cba-button"
+    component="example-button"
     args={{
       buttonText: 'Warning Button',
       variant: 'warning',
     }}
   >
     {(args) => html`
-        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+        <example-button variant="${args.variant}" >${args.buttonText}</example-button>
     `}
   </Story>
 </Canvas>
@@ -106,14 +106,14 @@ Stories that show the different variations of a button.
 <Canvas withSource="open">
   <Story
     name="Button - danger"
-    component="cba-button"
+    component="example-button"
     args={{
       buttonText: 'Danger Button',
       variant: 'danger',
     }}
   >
     {(args) => html`
-        <cba-button variant="${args.variant}" >${args.buttonText}</cba-button>
+        <example-button variant="${args.variant}" >${args.buttonText}</example-button>
     `}
   </Story>
 </Canvas>
